@@ -1,0 +1,64 @@
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+// 打印
+.print{
+  width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+  font-family: 'FangSong','SimSun','STFangsong','NSimSun'!important;
+}
+@media print {
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      td {
+        border: 1px solid #888;
+        padding: 10px 14px;
+        color: #000;
+        text-align: center;
+      }
+    }
+    tr{
+      page-break-inside: avoid;
+    }
+    @page{
+      margin: 15mm 10mm 19mm 10mm;
+    }
+}
